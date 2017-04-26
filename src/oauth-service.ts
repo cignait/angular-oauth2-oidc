@@ -38,7 +38,7 @@ export class OAuthService {
         this._storage = storage;
     }
     
-    private _storage: Storage = localStorage;
+    private _storage: Storage;
 
     constructor(private http: Http) {
         this.discoveryDocumentLoaded$ = Observable.create(sender => {
